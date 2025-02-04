@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>A Gym</title>
+  </head>
+  <body>
+
+   <!-- navbar -->
+<nav class="navbar">
+    <img class="logo" src="/images/AgymLogo-removebg-preview.png" alt="AGym Logo" />
+    <div class="hamburger" id="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li class="nav-link"><a href="#about-me">About Me</a></li>
+      <li class="nav-link"><a href="#plan">Plan</a></li>
+      <li class="nav-link"><a href="#testimonial">Testimonials</a></li>
+      <li class="nav-link"><a href="#contact-me">Contact Me</a></li>
+    </ul>
+  </nav>
+  
+
+    <!-- hero section -->
+    <section class="hero">
+      <div class="hero-content">
+    <h1>Free Trial Session for 1 Week</h1>
+    <p>Experience a personalized 1:1 training session tailored to your goals, whether you're looking to get fit, lose weight, or improve your strength. I will guide you through a session that's designed just for you.</p>
+    
+    <a href="https://wa.me/8787858871?text=Hi, I am interested in the Free Trial Session." target="_blank">
+      <button class="hero-btn">Start Your Free Trial Now</button>
+    </a>
+    <p class="cta-text">Limited spots available! Don’t miss out on this opportunity to transform your fitness journey. Sign up today!</p>
+</div>
+
+        <div class="hero-image-container">
+            <img class="hero-image" src="/images/hero-removebg-preview.png" alt="Hero Image">
+        </div>
+    </section>
+
+    <!-- about me -->
+    <section id="about-me" class="about-me">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>
+                Hi, I'm a fitness trainer dedicated to helping you achieve your fitness goals. I have experience of fitness more than 5 years.
+                With personalized training programs and expert guidance, I ensure that every workout is effective and enjoyable. 
+                Join me to transform your fitness journey and build a healthier lifestyle!
+            </p>
+        </div>
+    </section>
+
+    <!-- plan -->
+    <section id="plan" class="plan">
+        <h2>Choose Your Plan</h2>
+        <div class="plan-container">
+            <!-- 3 Months Plan -->
+            <div class="plan-card">
+                <h3>3 Months Transformation</h3>
+                <p class="price">₹3000</p>
+                <p>3 months full-body transformation. Get a personalized fitness plan, diet guidance, and weekly progress tracking.</p>
+                <a href="https://wa.me/8787858871?text=Hi, I am interested in the 3 Months Transformation Plan." target="_blank">
+                    <button class="plan-btn">Join Now</button>
+                </a>
+            </div>
+
+            <!-- 6 Months Plan -->
+            <div class="plan-card">
+                <h3>6 Months Transformation</h3>
+                <p class="price">₹5000</p>
+                <p>6 months full-body transformation. Get a personalized fitness plan, diet guidance, and weekly progress tracking.</p>
+                <a href="https://wa.me/8787858871?text=Hi, I am interested in the 6 Months Transformation Plan." target="_blank">
+                    <button class="plan-btn">Join Now</button>
+                </a>
+            </div>
+
+            <!-- 12 Months Plan -->
+            <div class="plan-card">
+                <h3>12 Months Transformation</h3>
+                <p class="price">₹9000</p>
+                <p>12 months full-body transformation. Get a personalized fitness plan, diet guidance, and weekly progress tracking.</p>
+                <a href="https://wa.me/8787858871?text=Hi, I am interested in the 12 Months Transformation Plan." target="_blank">
+                    <button class="plan-btn">Join Now</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonial" class="testimonial">
+        <h2>What My Clients Say</h2>
+        <div class="testimonial-container">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+                <p class="testimonial-comment">"I have lost 10kg in just 3 months! The personalized workouts and meal plans helped me stay on track. I feel more energized and confident than ever!"</p>
+                <p class="client-name">Rohit Sharma</p>
+                <p class="client-info">Fat Loss Journey</p>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+                <p class="testimonial-comment">"I was skeptical at first, but the results speak for themselves. I lost over 12kg in 6 months, and my body feels stronger every day!"</p>
+                <p class="client-name">Priya Verma</p>
+                <p class="client-info">Fat Loss Journey</p>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+                <p class="testimonial-comment">"I went from being skinny to building muscle in just 6 months! The tailored workouts and guidance really worked wonders for my body transformation."</p>
+                <p class="client-name">Vikas Mehra</p>
+                <p class="client-info">Muscle Gain Journey</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact-me" class="contact-me">
+        <h2>Contact Me</h2>
+        <form class="contact-form" action="https://wa.me/8787858871?text=Hi, I would like to get in touch." target="_blank">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="topic">Topic</label>
+                <input type="text" id="topic" name="topic" placeholder="Topic of Inquiry" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-icon">Facebook</a>
+                <a href="#" class="social-icon">Instagram</a>
+                <a href="#" class="social-icon">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 A Gym. All Rights Reserved.</p>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,547 @@
+body {
+  font-family:'Times New Roman', Times, serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar Styles */
+.navbar a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+  background-color: #f8f8f8;
+  position: relative; 
+}
+
+.logo {
+  width: 100px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none; 
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff5733; 
+}
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 30px;
+  height: 4px;
+  background-color: #333;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #f8f8f8;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Show the hamburger icon */
+  .hamburger {
+    display: flex;
+  }
+}
+
+
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  text-align: left;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.hero-btn {
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff5733;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #e04e2e;
+}
+
+/* Hero Image */
+.hero-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+}
+.hero-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #555;
+  font-size: 16px;
+}
+
+.hero-content .cta-text {
+  font-size: 16px;
+  color: #333;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .hero-content {
+      max-width: 100%;
+      padding-bottom: 20px;
+  }
+
+  .hero-image-container {
+      width: 100%;
+  }
+
+  .hero-image {
+      max-width: 80%;
+  }
+}
+
+/* About Me Section */
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 50px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+/* About Content */
+.about-content {
+  max-width: 600px;
+}
+
+.about-content h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.about-content p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Call-to-Action Button */
+.about-btn {
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff5733;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.about-btn:hover {
+  background-color: #e04e2e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-me {
+      padding: 40px 30px;
+  }
+
+  .about-content {
+      max-width: 100%;
+  }
+}
+
+
+/* Plan Section */
+.plan {
+  text-align: center;
+  padding: 60px 50px;
+  background-color: #f8f8f8;
+}
+
+.plan h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Plan Container */
+.plan-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Plan Card */
+.plan-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Plan Title */
+.plan-card h3 {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+/* Price */
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff5733;
+  margin-bottom: 10px;
+}
+
+/* Plan Description */
+.plan-card p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Join Now Button */
+.plan-btn {
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #ff5733;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.plan-btn:hover {
+  background-color: #e04e2e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .plan-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+
+/* Testimonial Section */
+.testimonial {
+  padding: 60px 50px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.testimonial h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Testimonial Container */
+.testimonial-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Testimonial Comment */
+.testimonial-comment {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+/* Client Name */
+.client-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+
+.client-info {
+  font-size: 14px;
+  color: #777;
+}
+
+
+@media (max-width: 768px) {
+  .testimonial-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+
+/* Contact Me Section */
+.contact-me {
+  padding: 60px 50px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.contact-me h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="text"], input[type="email"], textarea {
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  padding: 12px 25px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-form {
+      width: 90%;
+  }
+}
+
+
+
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-logo img {
+  width: 120px;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin: 10px 0;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #4CAF50;
+}
+
+.footer-social a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #4CAF50;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.footer-bottom p {
+  color: #bbb;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-logo img {
+      width: 100px;
+  }
+
+  .footer-links ul {
+      margin: 20px 0;
+  }
+
+  .footer-social {
+      margin-top: 10px;
+  }
+}
